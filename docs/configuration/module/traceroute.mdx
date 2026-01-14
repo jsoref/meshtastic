@@ -2,7 +2,7 @@
 id: traceroute
 title: Traceroute Module Usage
 sidebar_label: Traceroute
-description: The traceroute module allows you to understand the path a message took to reach the final destination over the mesh.
+description: The traceroute module allows you to understand the path that a message took to reach the final destination over the mesh.
 ---
 
 import Tabs from "@theme/Tabs";
@@ -12,7 +12,7 @@ import { Icon } from "@iconify/react";
 
 ## Overview
 
-Due to the limited bandwidth of LoRa, Meshtastic does not keep track of the nodes a message used to hop to the destination. However, from firmware 2.0.8 on, there is a Traceroute Module that can show you this.
+Due to the limited bandwidth of LoRa, Meshtastic does not keep track of nodes a message used to hop to the destination. However, from firmware 2.0.8 on, there is a Traceroute Module that can show you this.
 
 Only nodes that know the encryption key of the channel you use can be tracked. Also note that a message may arrive via multiple routes due to duplication because of rebroadcasting. This module will only track the hops of the first packet containing the traceroute request that arrived at the destination.
 
